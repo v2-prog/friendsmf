@@ -1,0 +1,17 @@
+{
+  "name": "quaker-hub",
+  "version": "0.1.0",
+  "description": "Financial and administrative hub for a Quaker society (members app + separate public site). Zero third-party dependencies.",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/start.js",
+    "start:members": "node --disable-warning=ExperimentalWarning src/server.js",
+    "start:public": "node --disable-warning=ExperimentalWarning src/public-site.js",
+    "seed": "node --disable-warning=ExperimentalWarning scripts/seed.js",
+    "retention": "node --disable-warning=ExperimentalWarning scripts/retention.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  },
+  "dependencies": {}
+}
