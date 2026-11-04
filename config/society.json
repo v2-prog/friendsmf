@@ -1,0 +1,97 @@
+{
+  "_readme": "Defaults for the society. Several values below can also be changed by the finance team in the app (Finance > Settings); those database overrides win over this file. Replace every placeholder before going live.",
+  "name": "Friends SMF",
+  "short_name": "Friends SMF",
+  "tagline": "Gathered in worship, giving in good faith.",
+  "abn": "",
+  "address": "[Street address, suburb, state, postcode]",
+  "contact_email": "treasurer@friendsmf.com",
+  "timezone": "Australia/Sydney",
+  "charity": {
+    "_readme": "status is the single switch that drives receipts and GST concessions. none = no tax receipts are issued; acnc_registered = registered charity, still no tax receipts; dgr_endorsed = deductible gift recipient, tax receipts are issued per ATO wording. Switch it in Finance > Settings once endorsement is confirmed.",
+    "status": "none",
+    "gst_registered": false,
+    "fundraising_input_taxed_election": false,
+    "dgr": {
+      "receipt_name": "",
+      "abn": "",
+      "fund_name": ""
+    }
+  },
+  "finance": {
+    "fiscal_year_start_month": 7,
+    "currency": "AUD",
+    "payroll_enabled": false,
+    "bank": {
+      "account_name": "[Friends SMF account name]",
+      "bsb": "000-000",
+      "account_number": "00000000",
+      "reference_note": "Please use the payment reference shown, so we can match your payment."
+    }
+  },
+  "approval": {
+    "auto_approve_threshold_cents": 50000,
+    "operational_categories": ["utilities", "insurance", "maintenance", "administration"],
+    "always_discernment_kinds": ["grant"],
+    "finance_only_kinds": ["payroll"],
+    "require_different_approver": true,
+    "expense_reflection_days": 14
+  },
+  "discernment": {
+    "reflection_days": 14,
+    "min_reflection_days": 7,
+    "max_reflection_days": 60
+  },
+  "expenses": {
+    "categories": [
+      { "key": "utilities", "label": "Utilities" },
+      { "key": "insurance", "label": "Insurance" },
+      { "key": "maintenance", "label": "Maintenance and repairs" },
+      { "key": "administration", "label": "Administration" },
+      { "key": "supplies", "label": "Supplies and materials" },
+      { "key": "professional_fees", "label": "Professional fees" },
+      { "key": "events", "label": "Events and hospitality" },
+      { "key": "other", "label": "Other" }
+    ],
+    "payment_methods": [
+      { "key": "bank_transfer", "label": "Bank transfer (BSB and account)" },
+      { "key": "bpay", "label": "BPAY" },
+      { "key": "cheque", "label": "Cheque" },
+      { "key": "other", "label": "Other (explain in details)" }
+    ]
+  },
+  "library": {
+    "categories": [
+      { "key": "trusts", "label": "Trusts" },
+      { "key": "wills", "label": "Wills" },
+      { "key": "bequests", "label": "Bequests" },
+      { "key": "salary_sacrifice", "label": "Salary sacrifice and workplace giving" },
+      { "key": "dgr_gifts", "label": "Gifts and deductible gift recipients" },
+      { "key": "gst", "label": "GST" },
+      { "key": "privacy", "label": "Privacy" },
+      { "key": "investments", "label": "Investments" },
+      { "key": "governance", "label": "Governance and hire terms" },
+      { "key": "other", "label": "Other" }
+    ],
+    "relevance": [
+      { "key": "essential", "label": "Essential" },
+      { "key": "recommended", "label": "Recommended" },
+      { "key": "background", "label": "Background" }
+    ]
+  },
+  "uploads": {
+    "max_mb_per_file": 10,
+    "max_files_per_upload": 5,
+    "allowed_extensions": ["pdf", "png", "jpg", "jpeg", "doc", "docx", "xls", "xlsx", "csv", "txt", "odt", "ods"]
+  },
+  "session": {
+    "member_hours": 336,
+    "finance_hours": 8,
+    "login_link_minutes": 15
+  },
+  "privacy": {
+    "officer_name": "[Privacy contact name]",
+    "officer_email": "privacy@friendsmf.com",
+    "bequest_review_months": 24
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_readme": "Copy for the public site. Edit freely. Nothing here is read from member data.",
+  "overview": {
+    "heading": "Friends SMF — a small community, handling money with care",
+    "intro": "We are Friends SMF, a Quaker society in Australia. We meet in silence, we make decisions together by seeking the sense of the meeting, and we try to use our resources in line with what we hold true: simplicity, equality, peace and care for the earth. Intended home: friendsmf.com.",
+    "paragraphs": [
+      "Our income comes from the generosity of members and friends, from hiring our rooms and garden to community groups, and from a few modest activities such as courses and sales of books and produce.",
+      "Our spending is mostly the ordinary costs of keeping a meeting place open, together with gifts to community projects that need what we can offer. Spending above a small limit is not decided by a vote. It is brought to the meeting, held in reflection for fourteen days, and settled only when the clerk records that the meeting has reached unity."
+    ]
+  },
+  "how_we_decide": {
+    "heading": "How we decide",
+    "body": "Anyone in the community may bring a proposal. Members then have a reflection period to ask questions, not to argue. After that the clerk or a designated elder tests whether the meeting has reached unity. If it has not, the proposal goes back for more work. We never settle a question by counting hands."
+  },
+  "giving": {
+    "heading": "Ways to give",
+    "intro": "You can give once or on a regular schedule. To give, sign in to the member area, or ask the treasurer to set you up.",
+    "tax_note_none": "At present we are not able to issue tax-deductible receipts. We will update this page if that changes.",
+    "tax_note_dgr": "Gifts to the society are tax-deductible. We issue a receipt for each gift.",
+    "other_ways": [
+      "Leave a gift in your will. Speak with the treasurer in confidence, or use the bequest form in the member area.",
+      "Offer goods or skills. We welcome useful things in good condition.",
+      "Hire our space. Rooms, hall and garden are available to groups who share our concern for the community."
+    ]
+  },
+  "contact": {
+    "heading": "Contact",
+    "body": "Write to the treasurer for any question about giving, hiring our rooms or community projects."
+  }
+}
