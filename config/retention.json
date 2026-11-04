@@ -1,0 +1,12 @@
+{
+  "_readme": "Retention periods in days. A policy is applied only when a handler exists in src/retention.js. Applying a policy writes an audit entry. The audit trail itself is never purged.",
+  "policies": {
+    "sessions": { "days": 30, "handler": "sessions", "description": "Expired or idle sessions" },
+    "login_tokens": { "days": 1, "handler": "login_tokens", "description": "Used or expired single-use login links" },
+    "outbox": { "days": 90, "handler": "outbox", "description": "Development email outbox messages" },
+    "attachments": { "days": 2555, "handler": "attachments", "description": "Uploaded files attached to expenses or library docs (7 years)" },
+    "inactive_user_accounts": { "days": 730, "handler": "inactive_user_accounts", "description": "Disabled accounts anonymised after two years; records they touched are kept" },
+    "bequest_intentions_review": { "days": 730, "handler": "bequest_intentions_review", "description": "Live bequest intentions are reviewed by a person, not deleted automatically" },
+    "audit_log": { "days": 0, "handler": "audit_log", "description": "Append-only hash-chained audit trail. Never purged." }
+  }
+}
